@@ -7,7 +7,7 @@ class Room(models.Model):
 
 class Massage(models.Model):
     value = models.CharField(max_length=100000, null=True)
-    data = models.DateTimeField(default=datetime.now, blank=True)
+    date = models.DateTimeField(default=datetime.now, blank=True)
     user = models.CharField(max_length=1000, null=True)
     room = models.CharField(max_length=100000, null=True)
 
