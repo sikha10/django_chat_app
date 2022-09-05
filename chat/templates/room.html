@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 <style>
 body {
   margin: 0 auto;
@@ -10,7 +13,7 @@ body {
 }
 
 .container {
-  border: 2px solid #dedede;
+  font-family: 'Rubik', sans-serif;
   background-color: #f1f1f1;
   border-radius: 5px;
   padding: 10px;
@@ -56,7 +59,7 @@ body {
 </head>
 <body>
 
-<h2>{{room}}</h2>
+<h2 style="font-family: 'Rubik', sans-serif;">{{room}}</h2>
 
 <div id="display">
 
@@ -106,7 +109,9 @@ setInterval(function(){
 
     input[type=submit] {
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #005c05;
+    box-shadow: inset 0 0 0 0 #4ca74f;
+    transition: ease-out 0.3s;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -116,7 +121,8 @@ setInterval(function(){
     }
 
     input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #4ca74f;
+    box-shadow:inset 200px 0 0 0 #4ca74f;    
     }
 
     div {
@@ -131,7 +137,7 @@ setInterval(function(){
         <input type="hidden" name="username" id="username" value="{{username}}"/>
         <input type="hidden" name="room_name" id="room_name" value="{{room_details}}"/>
         <input type="text" name="message" id="message" width="100px" />
-        <input type="submit" value="Send">
+        <input style="font-family: 'Rubik', sans-serif;" type="submit" value="Send">
     </form>
 </div>
 
